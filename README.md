@@ -1,6 +1,5 @@
 # FB-Bench: A Fine-Grained Multi-Task Benchmark for Evaluating LLMs' Responsiveness to Human Feedback
 
----
 [![Arxiv](http://img.shields.io/badge/cs.CL-arXiv%3A2410.09412-B31B1B.svg)](https://arxiv.org/abs/2410.09412)
 [![GitHub Repo stars](https://img.shields.io/github/stars/PKU-Baichuan-MLSystemLab/FB-Bench%20)](https://github.com/PKU-Baichuan-MLSystemLab/FB-Bench)
 <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FPKU-Baichuan-MLSystemLab%2FFB-Bench&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=visitors&edge_flat=false"/></a>

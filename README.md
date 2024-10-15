@@ -1,4 +1,11 @@
 # FB-Bench: A Fine-Grained Multi-Task Benchmark for Evaluating LLMs' Responsiveness to Human Feedback
+
+---
+[![Arxiv](http://img.shields.io/badge/cs-arXiv%3A2410.09412-B31B1B.svg)](https://arxiv.org/abs/2410.09412)
+[![GitHub Repo stars](https://img.shields.io/github/stars/PKU-Baichuan-MLSystemLab/FB-Bench%20)](https://github.com/PKU-Baichuan-MLSystemLab/FB-Bench)
+<a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FPKU-Baichuan-MLSystemLab%2FFB-Bench&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=visitors&edge_flat=false"/></a>
+![Static Badge](https://img.shields.io/badge/LLM_Evaluation-dodgerblue)
+
 ## Abstract
 Human feedback is crucial in the interactions between humans and Large Language Models (LLMs). However, existing research primarily focuses on benchmarking LLMs in single-turn dialogues. Even in benchmarks designed for multi-turn dialogues, the user inputs are often independent, neglecting the nuanced and complex nature of human feedback within real-world usage scenarios. To fill this research gap, we introduce FB-Bench, a fine-grained, multi-task benchmark designed to evaluate LLMs' responsiveness to human feedback in real-world usage scenarios. Drawing from the two main interaction scenarios, FB-Bench comprises 734 meticulously curated samples, encompassing eight task types, five deficiency types of response, and nine feedback types. We extensively evaluate a broad array of popular LLMs, revealing significant variations in their performance across different interaction scenarios. Further analysis indicates that task, human feedback, and deficiencies of previous responses can also significantly impact LLMs' responsiveness. Our findings underscore both the strengths and limitations of current models, providing valuable insights and directions for future research. Both the toolkits and the dataset of FB-Bench will be released soon.
 

@@ -32,7 +32,17 @@ Run `python gen_judgment.py`, the results are saved in `data/feedback-benchmark/
 Run `python show_results.py`
 
 ## Citation
-
+```
+@misc{li2024fbbenchfinegrainedmultitaskbenchmark,
+      title={FB-Bench: A Fine-Grained Multi-Task Benchmark for Evaluating LLMs' Responsiveness to Human Feedback}, 
+      author={Youquan Li and Miao Zheng and Fan Yang and Guosheng Dong and Bin Cui and Weipeng Chen and Zenan Zhou and Wentao Zhang},
+      year={2024},
+      eprint={2410.09412},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2410.09412}, 
+}
+```
 ## Acknowledgement
 Our code implementation refers to code from [arena-hard-auto](https://github.com/lmarena/arena-hard-auto)
 

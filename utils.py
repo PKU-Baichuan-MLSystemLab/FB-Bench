@@ -58,9 +58,13 @@ def load_cache_data(answer_dir: str):
         model_name = os.path.splitext(os.path.basename(filename))[0]
         cache = []
         with open(filename) as fin:
-            for line in fin:
-                line = json.loads(line)
-                cache.append(line)
+            for i, line in enumerate(fin):
+                try:
+                    line = json.loads(line)
+                    cache.append(line)
+                except Exception as e:
+                    print(f"Error loading line {i+1} from {filename}: {e}")
+                    raise e
         model_answers[model_name] = cache
 
     return model_answers
@@ -82,7 +86,6 @@ def make_config(config_file: str) -> dict:
     config_kwargs = {}
     with open(config_file, "r") as f:
         config_kwargs = yaml.load(f, Loader=yaml.SafeLoader)
-
     return config_kwargs
 
 

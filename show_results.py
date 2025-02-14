@@ -24,8 +24,6 @@ import math
 import copy
 from math import pi
 
-judge_dir = Path("data/feedback-benchmark/model_judgment/gpt-4o-2024-08-06")
-filenames = glob(os.path.join(judge_dir, "*.jsonl"))
 
 defined_task_types = ['Mathematics', "Reasoning", "Coding", "Text Extraction", "Text Error Correction", "Text Creation", "Knowledge Q&A", "Text Translation"]
 defined_error_types = ["Not Following Instructions", "Logical Error", "Incomplete Answer", "Factual Error", "Unprofessional Answer"]
@@ -86,16 +84,19 @@ def get_avg_score(data, float_num=4, mode='type'):
     
     return correct_avg_score, antisyco_avg_score, all_avg_score
 
-overall_score = []
-for filename in filenames:
-    model_name = os.path.splitext(os.path.basename(filename))[0]
-    with open(filename, 'r') as f:
-        data = [json.loads(l.strip()) for l in f]
-        overall_score.append((model_name, *get_avg_score(data)))
+if __name__ == '__main__':
+    judge_dir = Path("data/feedback-benchmark/model_judgment/gpt-4o-2024-08-06")
+    filenames = glob(os.path.join(judge_dir, "*.jsonl"))
+    overall_score = []
+    for filename in filenames:
+        model_name = os.path.splitext(os.path.basename(filename))[0]
+        with open(filename, 'r') as f:
+            data = [json.loads(l.strip()) for l in f]
+            overall_score.append((model_name, *get_avg_score(data)))
 
-df_overall_score = pd.DataFrame(overall_score, columns=["model_name", "error_correction_score", "response_maintenance_score", "overall_score"]).sort_values(by="overall_score", ascending=False)
+    df_overall_score = pd.DataFrame(overall_score, columns=["Model Name", "Error Correction Score", "Response Maintenance Score", "Overall Score"]).sort_values(by="Overall Score", ascending=False)
 
-df_overall_score.reset_index(drop=True, inplace=True)
-df_overall_score.index = range(1, len(df_overall_score) + 1)
+    df_overall_score.reset_index(drop=True, inplace=True)
+    df_overall_score.index = range(1, len(df_overall_score) + 1)
 
-print(df_overall_score)
+    print(df_overall_score)

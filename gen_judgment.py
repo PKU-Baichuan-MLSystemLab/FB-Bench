@@ -119,7 +119,6 @@ def judgment(**args):
                         origin_first_response=cur_question['origin_first_response'],
                         feedback=cur_question['feedback'],
                         second_response=cur_question['second_response'],
-                        reference_second_response=cur_question['reference_second_response'],
                         checklist=cur_question['checklist'],
                         checklist_judgement=json.dumps(gpt_checklist_judgement, indent=4, ensure_ascii=False),
                     )

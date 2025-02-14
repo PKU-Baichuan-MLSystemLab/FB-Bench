@@ -1,8 +1,3 @@
-"""Generate answers using api endpoints.
-
-Usage:
-python gen_api_answer --parallel 32
-"""
 import argparse
 import json
 import os
@@ -10,7 +5,6 @@ import time
 import concurrent.futures
 
 import tiktoken
-# import shortuuid
 import tqdm
 
 from utils import (

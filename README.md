@@ -39,14 +39,11 @@ Run `python show_results.py`
 
 ## Citation
 ```
-@misc{li2024fbbenchfinegrainedmultitaskbenchmark,
-      title={FB-Bench: A Fine-Grained Multi-Task Benchmark for Evaluating LLMs' Responsiveness to Human Feedback}, 
-      author={Youquan Li and Miao Zheng and Fan Yang and Guosheng Dong and Bin Cui and Weipeng Chen and Zenan Zhou and Wentao Zhang},
-      year={2024},
-      eprint={2410.09412},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2410.09412}, 
+@article{li2024fb,
+  title={FB-Bench: A Fine-Grained Multi-Task Benchmark for Evaluating LLMs' Responsiveness to Human Feedback},
+  author={Li, Youquan and Zheng, Miao and Yang, Fan and Dong, Guosheng and Cui, Bin and Chen, Weipeng and Zhou, Zenan and Zhang, Wentao},
+  journal={arXiv preprint arXiv:2410.09412},
+  year={2024}
 }
 ```
 ## Acknowledgement
